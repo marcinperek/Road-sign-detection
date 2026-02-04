@@ -1,0 +1,26 @@
+[project]
+name = "road-sign-detection"
+version = "0.1.0"
+description = "Road sign detection model and dataset"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "pillow>=12.1.0",
+    "termcolor>=3.3.0",
+    "tqdm>=4.67.3",
+]
+
+[project.scripts]
+images-rename = "image.rename:main"
+images-crop = "image.crop:main"
+images-to-yolo = "image.create_yolo_dataset:main"
+
+check-classes = "utils.check_classes:check_classes"
+
+[build-system]
+requires = ["uv_build>=0.9.26,<0.10.0"]
+build-backend = "uv_build"
+
+
+[tool.uv.build-backend]
+module-name = ["image", "utils"]

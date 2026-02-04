@@ -1,0 +1,61 @@
+[images]
+raw_path = "images/raw"
+renamed_path = "images/renamed"
+unlabeled_path = "images/unlabeled"
+labeled_path = "images/labeled"
+yolo_dataset_path = "images/yolo_dataset"
+
+min_per_class = 70
+
+classes = [
+    "5",
+    "10",
+    "20",
+    "30",
+    "40",
+    "50",
+    "60",
+    "70",
+    "80",
+    "90",
+    "100",
+    "110",
+    "120",
+
+    "5_koniec",
+    "10_koniec",
+    "20_koniec",
+    "30_koniec",
+    "40_koniec",
+    "50_koniec",
+    "60_koniec",
+    "70_koniec",
+    "80_koniec",
+    "90_koniec",
+    "100_koniec",
+    "110_koniec",
+    "120_koniec",
+
+    "strefa_20",
+    "strefa_20_koniec",
+    "strefa_30",
+    "strefa_30_koniec",
+    "strefa_40",
+    "strefa_40_koniec",
+
+    "autostrada",
+    "autostrada_koniec",
+    "ekspresowa",
+    "ekspresowa_koniec",
+    "zabudowany",
+    "zabudowany_koniec",
+    "zamieszkania",
+    "zamieszkania_koniec",
+
+    "koniec_zakazow"
+]
+
+[dataset]
+train_split = 0.8
+val_split = 0.1
+test_split = 0.1
