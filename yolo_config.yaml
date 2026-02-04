@@ -1,0 +1,18 @@
+path: images/yolo_dataset # dataset root dir
+train: images/train # train images (relative to 'path')
+val: images/validation # val images (relative to 'path')
+
+# Classes
+names:
+  0: 30
+  1: 40
+  2: 50
+  3: 60
+  4: 70
+  5: 100
+  6: autostrada
+  7: autostrada_koniec
+  8: ekspresowa
+  9: ekspresowa_koniec
+  10: zabudowany
+  11: zabudowany_koniec
